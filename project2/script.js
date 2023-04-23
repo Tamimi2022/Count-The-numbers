@@ -19,6 +19,15 @@ btns.forEach(function (item) {
         else {
             count = 0;
         }
+        if (count < 0) {
+            value.style.color = 'blue'
+        }
+        else if (count > 0) {
+            value.style.color = 'pink'
+        }
+        else {
+            value.style.color = 'red'
+        }
         value.textContent = count;
     })
 })
